@@ -38,15 +38,33 @@
 
     #     What would students[0]['Email'][1] return?
 
-    #     Why does students[0]['Email'][0] use two sets of brackets?
+#     #     Why does students[0]['Email'][0] use two sets of brackets?
 import student_data
 
-# print(student_data.students)
+# # print(student_data.students)
 students = student_data.students
-print(len(students))
-print(students[0]['Combo,Name'])
-print(students[0]['Email'][0])
-print(students[0]['Email'][1])
+# print(len(students))
+# print(students[0]['Combo,Name'])
+# print(students[0]['Email'][0])
+# print(students[0]['Email'][1])
+# print(students[0]['FName'])
+# print(students[0]['MName'])
+# print(students[0]['HR'])
+# print(students[1]['CPSID'])
+# print(students[1]['Combo,Name'])
+# print(students[2]['Email'])
+
+
+
+
+
+
+
+
+
+
+
+
 
 # What is being counted?
 
@@ -68,11 +86,27 @@ print(students[0]['Email'][1])
 #and printing the name and email of the students
 #we are also printing a line of underscores to separate the students
 #we are also printing a line of underscores to separate the students
-for student in students:
-    print(student['Combo,Name'])
-    print(student['Email'][0])
-    print(student['Email'][1])
-    print("_"*25)
+# for student in students:
+#     print(student['Combo,Name'])
+#     print(student['Email'][0])
+#     print(student['Email'][1])
+#     print(student['GL'])
+#     print(student['HR'])
+#     print(student['CPSID'])
+#     student.update({'Lunch_Status':"Reduced"})
+#     if ['GL'] >== 10:
+#         student.update({'Off_Campus':"Eligible"})
+#     else:
+#         student.update({'Off_Campus':"Not Eligible"})
+#     print("_"*25)
+
+
+
+
+
+
+
+
 
 # What does the loop variable student represent on each pass?
 
@@ -93,6 +127,13 @@ for student in students:
     if name == student['Combo,Name']:
         print(student['Combo,Name'])
         print("this works")
+
+cpsid = int(input("What is your CPS ID number?"))
+for student in students:
+    if cpsid == student['CPSID']:
+        print(student['CPSID'])
+        print("this works")
+
 
 # What is the goal of this search?
 
